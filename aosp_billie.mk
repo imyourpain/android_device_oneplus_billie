@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from billie device
 $(call inherit-product, device/oneplus/billie/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Set shipping API level (Indicates the first api level, device has been commercially launched on)
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Device identifiers.
-PRODUCT_NAME := lineage_billie
+PRODUCT_NAME := aosp_billie
 PRODUCT_DEVICE := billie
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -37,9 +37,7 @@ PRODUCT_MODEL := Nord N10 5G
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlusN10-user 11 RKQ1.201217.002 2311081107 release-keys" \
     PRODUCT_DEVICE=OnePlusN10 \
     PRODUCT_NAME=OnePlusN10
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := OnePlus/OnePlusN10/OnePlusN10:11/RKQ1.201217.002/2311081107:user/release-keys
+
