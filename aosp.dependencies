@@ -10,6 +10,5 @@
    {
     "repository": "propriatary_vendor_oneplus_billie",
     "target_path": "vendor/oneplus/billie",
-    "branch": "lineage-21.0"
   }
 ]
