@@ -11,4 +11,6 @@
     "repository": "propriatary_vendor_oneplus_billie",
     "target_path": "vendor/oneplus/billie",
   }
+    "repository"  : "hardware_oplus",
+    "target_path" : "hardware/oplus",
 ]
